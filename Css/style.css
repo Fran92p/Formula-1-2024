@@ -1,0 +1,30 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-image: url('F pricipal.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#redirectButton {
+    padding: 20px 40px;
+    font-size: 20px;
+    color: white;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#redirectButton:hover {
+    background-color: darkred;
+}
