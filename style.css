@@ -16,6 +16,8 @@ body, html {
 }
 
 #redirectButton {
+    position: absolute;
+    bottom: 10%;
     padding: 20px 40px;
     font-size: 20px;
     color: white;
