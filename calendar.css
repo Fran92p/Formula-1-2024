@@ -3,7 +3,8 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000; /* Fondo negro para contrastar con el contenido */
+    background: url('f1.png') no-repeat center center fixed;
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
     color: #fff;
 }
 
@@ -11,14 +12,15 @@ body {
     max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
-    background: linear-gradient(135deg, #1e1e1e, #333); /* Degradado oscuro */
+    background: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente para contraste */
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Sombra para profundidad */
+    position: relative; /* Necesario para posicionar la tarjeta emergente */
 }
 
 h1 {
     text-align: center;
-    color: #f0f0f0; /* Color claro para el título */
+    color: rgb(197, 0, 0); /* Blanco para el título */
     font-size: 3em;
     margin-bottom: 20px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Sombra para el título */
@@ -27,7 +29,7 @@ h1 {
 table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #222; /* Fondo de la tabla */
+    background-color: #222; /* Fondo de la tabla con gris oscuro */
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para profundidad */
@@ -36,19 +38,19 @@ table {
 th, td {
     padding: 15px;
     text-align: center;
-    border-bottom: 1px solid #444; /* Borde gris oscuro entre filas */
+    border-bottom: 1px solid #444444; /* Borde gris oscuro entre filas */
     font-size: 1em;
 }
 
 th {
-    background-color: #d9534f; /* Color rojo para los encabezados */
-    color: #fff;
+    background-color: #020a49; /* Rojo Fórmula 1 para los encabezados */
+    color: #fff; /* Blanco para el texto en los encabezados */
     font-weight: bold;
 }
 
 td {
     background-color: #333; /* Fondo gris oscuro para las celdas */
-    color: #ddd;
+    color: #ddd; /* Texto en gris claro */
 }
 
 tr:nth-child(even) td {
@@ -58,4 +60,20 @@ tr:nth-child(even) td {
 tr:hover td {
     background-color: #555; /* Fondo más claro al pasar el mouse */
     color: #fff;
+}
+
+/* Estilos para la tarjeta emergente */
+.info-card {
+    position: absolute;
+    background-color: #000; /* Fondo negro para la tarjeta */
+    color: #fff; /* Texto blanco en la tarjeta */
+    border: 1px solid #d9534f; /* Borde rojo para la tarjeta */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: none; /* Oculta por defecto */
+    max-width: 350px;
+    z-index: 1000;
+    pointer-events: none; /* Asegura que la tarjeta no interfiera con el cursor */
+    font-size: 0.9em; /* Tamaño de fuente ajustado */
 }
