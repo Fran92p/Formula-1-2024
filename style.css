@@ -6,7 +6,7 @@ body, html {
 }
 
 .container {
-    background-image: url('F pricipal.jpg');
+    background-image: url('img/F pricipal.jpg');
     background-size: cover;
     background-position: center;
     height: 100%;
